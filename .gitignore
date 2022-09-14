@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-brown-tarsier/node_modules
+/brown-tarsier/node_modules
 /.pnp
 .pnp.js
 
