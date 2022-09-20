@@ -6,7 +6,7 @@ import sanityClient from "../client.js";
 
 
 
-function Events(){
+function Post(){
     const [postData, setPost] = useState(null);
 
     useEffect(()=>{
@@ -41,7 +41,22 @@ function Events(){
                     {postData && 
                         postData.map((post, index) =>(
                             <article>
-                                <Link to={"/events/"}>
+                                <Link to={"/events/" + post.slugs.current } key={post.slug.current}>
+                                    <span 
+                                        className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                                        key={index}
+                                    >
+                                        <img 
+                                            src={post.mainImage.asset.url}
+                                            alt={post.mainImage.alt}
+                                            className="w-full h-full rounded-r object-cover absolute"
+                                         />
+                                         <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                                            <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
+                                                {post.title}
+                                            </h3>
+                                         </span>
+                                    </span>
 
                                 </Link>
                             </article>
@@ -57,4 +72,4 @@ function Events(){
         </main>
     )
 }
-export default Events;
+export default Post;  
