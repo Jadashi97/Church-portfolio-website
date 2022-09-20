@@ -6,6 +6,7 @@ import Post from './components/Post';
 import Sermons from './components/Sermons';
 import Offering from './components/Offering';
 import Navbar from "./components/Navbar";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
           <Routes>
                 <Route path="Home" element={<Home/>}/>
                 <Route path="About" element={<About/>}/>
-                <Route path="Events" element={<Post/>}/>
+                <Route path="Post" element={<Post/>}/>
                 <Route path="Sermons" element={<Sermons/>}/>
                 <Route path="Offering" element={<Offering/>}/> 
+                <Route path="Project" element={<Project/>}/> 
           </Routes>
     </BrowserRouter>
   );

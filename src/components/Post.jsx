@@ -41,7 +41,7 @@ function Post(){
                     {postData && 
                         postData.map((post, index) =>(
                             <article>
-                                <Link to={"/events/" + post.slugs.current } key={post.slug.current}>
+                                <Link to={"Post" + post.slugs.current } key={post.slug.current}>
                                     <span 
                                         className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                                         key={index}

@@ -13,11 +13,11 @@ function Home(){
             </div>
             <section>
                 <div>
-                    <h2 className="text-4xl text-orange-400 font-bold cursive leading-none lg:leading-snug home-name">
+                    <h2 className="text-1xl text-orange-400 font-bold cursive leading-none lg:leading-snug home-name">
                         Our Mission
                     </h2>
                 </div>
-                <div className="absolute indent-8 justify-around  break-words min-h-screen lg:pt-10 px-10 leading-none lg:leading-8 text-1xl pb-2">
+                <div className="indent-8 justify-around  break-words min-h-screen lg:pt-10 px-10 leading-none lg:leading-8 text-1xl pb-2">
                     <p>As a Community, we aim to glorify God by making disciples by reaching and teaching all people with the life-changing message of Jesus Christ.</p> <br />
                     <p>We believe that God's justifying grace must not be separated from His sanctifying power and purpose.</p> <br />
                     <p>God commands us to love Him supremely and others sacrificially, and to live out our faith with care for one another, 
