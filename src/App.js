@@ -7,7 +7,7 @@ import Sermons from './components/Sermons';
 import Offering from './components/Offering';
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
-// import SinglePost from "./components/SinglePost";
+import SinglePost from "./components/SinglePost";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
                 <Route path="Sermons" element={<Sermons/>}/>
                 <Route path="Offering" element={<Offering/>}/> 
                 <Route path="Project" element={<Project/>}/> 
-                {/* <Route path="/post/:slug" element={<SinglePost/>}/> */}
+                <Route path="/Post/:slug" element={<SinglePost/>}/>
           </Routes>
     </BrowserRouter>
   );
