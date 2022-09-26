@@ -1,21 +1,65 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import sanityClient from "../client";
+import pic6 from "/Users/nyarjijada/Desktop/Personal-Main-Projects/church/src/pics/ss6.jpg";
+import  imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
+
+const builder = imageUrlBuilder(sanityClient);
+
+function urlFor(source){
+  return builder.image(source);
+
+}
+
 
 function About() {
+  const [ author, setAuthor] = useState(null);
+
+  useEffect(() =>{
+    sanityClient
+      .fetch(
+        `*[_type == "author"]{
+          name,
+          "bio": bio[0].children[0].text,
+          "authorImage": image.asset->
+        }`
+      )
+      .then((data) => setAuthor(data[0]))
+      .catch(console.error);
+
+    }, []);
+
+    if (!author) return <div>Loading.....</div>;
+
     return (
-      <div className="about-us">
-        <h2>BELIEFS, MISSION, OUTREACH AND COMMUNITY</h2>
-        <h2>Welcome</h2>
-        <div className="about-1">
-            <p> 
-              We are happy that you are interested in learning more about SouthSudanese Community Church.</p>
-            
-            <p>Our prayer is that you'll find this as your community and your church home to praise and worship together.</p>  
-            <p>
-              We want you to feel at home from the very beginning. No matter what stage of life you are in, we want you to feel welcomed, encouraged, and cared for as you come to this wonderful and loving Community.</p>
-             <p> We strive to be people who love each other well and point each other to Jesus.</p>
+      <main className="relative">
+        <img src={pic6} alt="background Pic" className="absolute w-full" />
+        <div className="p-10 lg:pt-48 container mx-auto relative">
+          <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+            <img 
+              src={urlFor(author.authorImage).url()} 
+              className="rounded w-32 h-32 lg:w-64 mr-8"
+              alt="lokose"
+            />
+            <div className="text-lg flex flex-col justify-center">
+              <h1 className="cursive text-6xl text-green-300 mb-4">
+                Hello there! I am {" "} 
+                <span className="text-green-100">
+                  {author.name}
+                </span>
+              </h1>
+              <div className="prose lg:prose-xl text-white">
+                <BlockContent
+                  blocks={author.bio}
+                  projectId="zq00lcnz"
+                  dataset="production"
+                />
+                <p className="text-green-200 text-lg">{author.bio}</p>
+              </div>
+            </div>
+          </section>
         </div>
-              
-      </div>
+      </main>
     );  
   }
   export default About;
