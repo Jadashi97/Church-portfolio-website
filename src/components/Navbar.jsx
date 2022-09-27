@@ -63,17 +63,7 @@ function Navbar(){
                     >
                         Offering
                     </NavLink>
-
-                    <NavLink 
-                        to="Sermons"
-                        activeClassName = "text-red-100 bg-red-700"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
-                    >
-                        Sermons
-                    </NavLink>
+                    
                     <NavLink 
                         to="Project"
                         activeClassName = "text-red-100 bg-red-700"

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client";
-import pic6 from "/Users/nyarjijada/Desktop/Personal-Main-Projects/church/src/pics/ss6.jpg";
+import pic2 from "/Users/nyarjijada/Desktop/Personal-Main-Projects/church/src/pics/ss2.jpg";
 import  imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -33,12 +33,12 @@ function About() {
 
     return (
       <main className="relative">
-        <img src={pic6} alt="background Pic" className="absolute w-full" />
+        <img src={pic2} alt="background Pic" className="absolute w-full py-20 px-20" />
         <div className="p-10 lg:pt-48 container mx-auto relative">
-          <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+          <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-10">
             <img 
               src={urlFor(author.authorImage).url()} 
-              className="rounded w-32 h-32 lg:w-64 mr-8"
+              className="rounded w-32 h-32 lg:w-60 mr-8"
               alt="lokose"
             />
             <div className="text-lg flex flex-col justify-center">
