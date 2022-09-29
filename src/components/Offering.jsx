@@ -7,12 +7,12 @@ function Offering(){
         <div className="relative bg-gray-300 justify-center p-10" >
         
             <div className="text-center">
-                <h2 className="text-red-500 text-5xl font-bold">Giving</h2>
+                <h2 className="text-red-600 text-5xl font-bold">Giving</h2>
                 <div className="lg:pt-44 container mx-auto relative">
                     <img 
                         src={giving} 
                         alt="offertory-pic"
-                        className="object-center py-8 px-10"
+                        className="object-center py-8 px-10 w-200px h-200px"
                     />
                 </div>
                 <div className="pt-10 text-2xl">

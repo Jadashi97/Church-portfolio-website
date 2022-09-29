@@ -9,7 +9,7 @@ function Navbar(){
 
 
     return(
-        <header className="bg-yellow-600">
+        <header className="bg-yellow-600 flex-inline">
             <div className="container mx-auto flex justify-between">
                     <strong className="inline-flex py-6 px-3 text-red-100 bg-red-700">
                         South Sudanese <br />
@@ -23,9 +23,6 @@ function Navbar(){
                         to="Home"
                         activeclassname = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-200 text-2xl font-bold italic tracking-widest"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
 
                     >
                         Home
@@ -46,9 +43,6 @@ function Navbar(){
                         to="About"
                         activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
                     >
                         About
                     </NavLink>
@@ -57,9 +51,6 @@ function Navbar(){
                         to="Offering"
                         activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
                     >
                         Offering
                     </NavLink>
@@ -68,9 +59,6 @@ function Navbar(){
                         to="Project"
                         activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
                     >
                         Project
                     </NavLink>
