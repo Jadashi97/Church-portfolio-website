@@ -17,7 +17,7 @@ function Offering(){
                 </div>
                 <div className="pt-10 text-2xl">
                     <strong>Everyone according to his/her purpose at heart, so let him/her give; not grudgingly, or of necessity: for God loves a cheerful giver.</strong>
-                    <p>This is a working page in progress... soon we will have links to cashapp and zelle inorder to give at your convinience</p>
+                    <p>This is a working page in progress.. soon we will have links to cashapp, zelle even Bitcoin inorder to give at your convinience</p>
                     <p><strong>........COMING SOOON.....</strong></p>
                 </div>
             </div>           
