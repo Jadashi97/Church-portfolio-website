@@ -1,5 +1,5 @@
 import React from "react";
-import homePic from "/Users/nyarjijada/Desktop/Personal-Main-Projects/church-website/src/ss6.jpg";
+import homePic from "../ss6.jpg";
 
 export default function Home() {
   return (

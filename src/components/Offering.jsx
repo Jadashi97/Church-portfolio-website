@@ -1,5 +1,5 @@
 import React from "react";
-import giving from "/Users/nyarjijada/Desktop/Personal-Main-Projects/church-website/src/giving.jpg";
+import giving from "../giving.jpg";
 
 
 function Offering(){
