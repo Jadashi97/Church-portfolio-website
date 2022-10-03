@@ -25,4 +25,4 @@ function Offering(){
     )
 }
 
-export default Offering;
+export default Offering; 
