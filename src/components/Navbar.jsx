@@ -9,7 +9,7 @@ function Navbar(){
 
 
     return(
-        <header className="bg-yellow-600 flex-inline">
+        <header className="bg-yellow-600 flex flex-row flex-wrap">
             <div className="container mx-auto flex justify-between">
                     <strong className="inline-flex py-6 px-3 text-red-100 bg-red-700">
                         South Sudanese <br />

@@ -33,7 +33,7 @@ function About() {
 
     return (
       <main className=" bg-green-100 relative">
-        <img src={pic2} alt="background Pic" className="absolute bg-green-100  w-half h-half py-24 px-24" />
+        <img src={pic2} alt="background Pic" className="absolute bg-green-100 max-h-min w-half h-half py-24 px-24" />
         <div className="p-10 lg:pt-48 container mx-auto relative">
           <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-10">
             <img 
