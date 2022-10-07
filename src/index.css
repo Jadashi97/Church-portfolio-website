@@ -26,3 +26,32 @@
 .home-name {
   font-size: 80px;
 }
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 690px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.each-slide-effect span {
+  padding: 10px;
+  font-size: 10px;
+  background: #efefef;
+  text-align: center;
+}
+
+.home-page{
+  padding: 4rem;
+}
+
+@media (max-width: 1199px) and (min-width: 769px)  {
+  .each-slide-effect > div {
+    width: 675px;
+  }
+}
