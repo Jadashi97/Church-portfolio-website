@@ -9,9 +9,9 @@ function Navbar(){
 
 
     return(
-        <header className="bg-yellow-600 flex flex-row flex-wrap">
+        <header className="bg-yellow-600">
             <div className="container mx-auto flex justify-between">
-                    <strong className="inline-flex py-6 px-3 text-red-100 bg-red-700">
+                    <strong className="inflex-flex items-center py-6 px-3 text-red-100 bg-red-700">
                         South Sudanese <br />
                         Community <br />
                         Church
@@ -20,8 +20,8 @@ function Navbar(){
                 <nav className="flex">
 
                     <NavLink
-                        to="Home"
-                        activeclassname = "text-red-100 bg-red-700"
+                        to="/"
+                        exact
                         className="inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-200 text-2xl font-bold italic tracking-widest"
 
                     >
@@ -30,7 +30,6 @@ function Navbar(){
 
                     <NavLink 
                         to="Post"
-                        activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                         style={({ isActive }) =>
                             isActive ? activeStyle : undefined
@@ -41,7 +40,6 @@ function Navbar(){
 
                     <NavLink 
                         to="About"
-                        activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                     >
                         About
@@ -49,7 +47,6 @@ function Navbar(){
 
                     <NavLink 
                         to="Offering"
-                        activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                     >
                         Offering
@@ -57,7 +54,6 @@ function Navbar(){
                     
                     <NavLink 
                         to="Project"
-                        activeClassName = "text-red-100 bg-red-700"
                         className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                     >
                         Project

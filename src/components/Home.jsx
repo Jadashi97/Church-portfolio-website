@@ -14,15 +14,6 @@ export default function Home() {
     
 
   return (
-    // <main className="bg-green-100 flex items-center ">
-    //     <div className=" bg-green-100 prose">
-    //       <img
-    //         src={homePic}
-    //         alt="Monstera Leaves"
-    //         className="absolute object-cover md:w-full lg:w-full rounded-md w-full h-full "
-    //       />
-    //     </div>
-    // </main>
     <div className="home-page h-full w-full bg-green-100 min-h-screen p-12">
 
         <Slide className="bg-green-100 flex items-center">
