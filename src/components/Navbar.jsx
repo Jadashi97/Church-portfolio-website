@@ -11,13 +11,17 @@ function Navbar(){
     return(
         <header className="bg-yellow-600">
             <div className="container mx-auto flex justify-between">
-                    <strong className="inflex-flex items-center py-6 px-3 text-red-100 bg-red-700">
+
+                <nav className="flex">
+                    <strong className="flex items-center py-6 px-3 text-red-100 bg-red-700">
+                        <NavLink
+                            to="/"
+                        >
                         South Sudanese <br />
                         Community <br />
                         Church
+                        </NavLink>
                     </strong>
-
-                <nav className="flex">
 
                     <NavLink
                         to="/"

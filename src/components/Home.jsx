@@ -14,7 +14,7 @@ export default function Home() {
     
 
   return (
-    <div className="home-page h-full w-full bg-green-100 min-h-screen p-12">
+    <div className="home-page h-half w-full bg-green-100 min-h-screen p-12">
 
         <Slide className="bg-green-100 flex items-center">
             <div className="each-slide-effect">
